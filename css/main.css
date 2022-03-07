@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.4s ease-in-out all;
+}
+
+:root {
+  --color-primary-dark: #111a3b;
+  --color-primary: #321b47;
+  --color-primary-light: #a53e86;
+  --color-secondary-darkest: #1a0a11;
+  --color-secondary-dark: #c7417b;
+  --color-secondary: #f5487f;
+  --color-text: #EEE;
+  --color-green: rgb(35, 200, 60);
+  --color-red: rgb(200, 35, 71);
+  --color-orange: rgb(212, 200, 21);
+}
+
+body {
+  background-color: var(--color-secondary-darkest);
+  color: var(--color-text);
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+}
+
+h1, h2, h3 {
+  font-family: 'Crete Round', serif;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+h2 {
+  color: var(--color-secondary-dark);
+  font-size: 1.5rem;
+}
+
+hr {
+  height: 1px;
+  display: block;
+  border: none;
+  background-color: var(--color-secondary);
+  margin: 2rem 0;
+}
+
+header {
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  background: linear-gradient(to right, var(--color-primary), var(--color-primary-dark));
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  min-height: 90vh;
+}
+
+aside {
+  padding: 2rem;
+  flex: 30vh 0 1;
+  background: linear-gradient(to bottom, var(--color-primary), var(--color-primary-dark));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+aside ul {
+  margin: 0 -2rem;
+}
+
+aside ul li a {
+  color: var(--color-secondary);
+  text-decoration: none;
+  padding: 1rem 2rem;
+  display: block;
+  border-left: 2px solid transparent;
+  text-transform: uppercase;
+  color: var(--color-text);
+}
+
+aside ul li.active, aside ul li a:hover {
+  background-color: var(--color-primary-light);
+  border-left: 2px solid var(--color-secondary-dark);
+}
+
+aside .flex-end {
+  background-color: var(--color-primary-light);
+  padding: 1rem;
+}
+
+select {
+  background-color: var(--color-secondary-dark);
+  padding: 0.5rem;
+  color: var(--color-text);
+}
+
+main {
+  padding: 2rem;
+  flex: auto 1 1;
+}
+
+/** form **/
+form {
+  padding: 1rem;
+  background-color: var(--color-primary);
+  border-radius: 5px;
+  border-bottom: 1px solid var(--color-primary-light);
+  margin-bottom: 2rem;
+}
+
+::placeholder {
+  color: var(--color-text);
+}
+
+.input-group, .todo-group {
+  display: flex;
+}
+
+.input-group .input-field {
+  flex: auto 1 1;
+  display: block;
+  border: 1px solid transparent;
+  border-right: none;
+  background-color: var(--color-primary-dark);
+  color: var(--color-text);
+  padding: 0.5rem 1rem;
+  border-radius: 5px 0 0 5px;
+}
+.input-group :focus {
+  outline: none;
+  border-color: var(--color-secondary);
+}
+
+.input-group button {
+  display: block;
+  border: none;
+  background-color: var(--color-green);
+  color: var(--color-text);
+  padding: 0.5rem 1rem;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.todo-group {
+  margin: 0 0 1rem 0;
+}
+
+.todo-group .todo {
+  flex: auto 1 1;
+  padding: 0.5rem 1rem;
+  background-color: var(--color-primary);
+  border-radius: 5px 0 0 5px;
+}
+
+.todo-group button {
+  display: block;
+  border: none;
+  color: var(--color-text);
+  padding: 0.5rem 1rem;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.todo-group button.trash {
+  background-color: var(--color-red);
+}
+
+.todo-group button.check {
+  background-color: var(--color-orange);
+  color: var(--color-primary-dark);
+}
+
+
+
+button:hover {
+  opacity: 0.7;
+  padding: 0.5rem 1.2rem;
+}
