@@ -3,20 +3,27 @@
 <!---
   STARTING TEMPLATE FOR MVC-APP IN LARAVEL
 -->
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Quicksand:wght@300&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/VERVANGEN-DOOR-EIGEN-KEY.js" crossorigin="anonymous"></script>  
+  <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Quicksand:wght@300&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/VERVANGEN-DOOR-EIGEN-KEY.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./css/main.css">
   <title>Tough Do's</title>
 </head>
+
 <body>
   <header>
-    <h1>Tough Do's <i class="fa-regular fa-face-smile"></i>
+    <h1>Tough Do's <i class="fa-regular fa-face-smile"></i></h1>
+
+    <nav>
+      <a href="author.html">about the author</a>
+    </nav>
   </header>
   <div class="container">
     <aside>
@@ -30,17 +37,17 @@
             <a href="#">Groceries</a>
           </li>
         </ul>
-      </div>  
+      </div>
       <div class="flex-end">
         <h3>Theme</h3>
         <select id="theme-switcher">
-          
+
         </select>
       </div>
     </aside>
     <main>
       <h2>OMG. so much stuff to do!</h2>
-      
+
       <form action="">
         <div class="input-group">
           <input type="text" placeholder="What to do next?" class="input-field">
@@ -66,11 +73,11 @@
             <i class="fa fa-check"></i>
           </button>
         </div>
-      
+
       </div>
 
       <hr>
-      
+
       <h2>Ough, these 'r done!</h2>
       <div class="todos">
         <div class="todo-group">
@@ -94,8 +101,12 @@
       </div>
     </main>
   </div>
-  
+
+  <footer>
+    Copyright AHS - current year
+  </footer>
 
   <script type="module" src="./scripts/app.js"></script>
 </body>
+
 </html>
